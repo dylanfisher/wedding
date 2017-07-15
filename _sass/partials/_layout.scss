@@ -1,0 +1,44 @@
+html {
+  background-color: $body-color;
+  color: $text-color;
+  text-align: center;
+}
+
+.site-container {
+  max-width: $site-max-width;
+  margin: 0 auto;
+}
+
+.content-container {
+  max-width: $content-max-width;
+  margin: 0 auto;
+}
+
+.block {
+  margin: 0 auto 4rem;
+}
+
+.sm-inline {
+  display: none;
+
+  @include breakpoint(sm) {
+    display: inline;
+  }
+}
+
+.footer {
+  background-color: $body-color;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.page-splash {
+  position: relative;
+  height: 60vh;
+}
+
+.page-splash__title {
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+}

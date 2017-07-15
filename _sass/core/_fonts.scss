@@ -1,0 +1,31 @@
+// Fonts
+
+@font-face {
+  font-family: 'founders-grotesk-regular';
+  src: url('fonts/FoundersGroteskWeb-Regular.eot');
+  src: url('fonts/FoundersGroteskWeb-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/FoundersGroteskWeb-Regular.woff2') format('woff2'),
+       url('fonts/FoundersGroteskWeb-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'founders-grotesk-semibold';
+  src: url('fonts/FoundersGroteskWeb-Semibold.eot');
+  src: url('fonts/FoundersGroteskWeb-Semibold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/FoundersGroteskWeb-Semibold.woff2') format('woff2'),
+       url('fonts/FoundersGroteskWeb-Semibold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'freya-medium';
+  src: url('fonts/freya-medium.eot');
+  src: url('fonts/freya-medium.eot?#iefix') format('embedded-opentype'),
+       url('fonts/freya-medium.woff2') format('woff2'),
+       url('fonts/freya-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

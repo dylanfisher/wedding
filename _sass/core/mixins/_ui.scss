@@ -1,0 +1,33 @@
+//
+// Links
+//
+
+@mixin blank-link {
+  text-decoration: none;
+  color: inherit;
+}
+.blank-link { @include blank-link; }
+
+@mixin blank-link-hover {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
+}
+.blank-link-hover { @include blank-link-hover; }
+
+//
+// Lists
+//
+
+@mixin blank-list {
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0;
+  }
+}
+.blank-list { @include blank-list; }

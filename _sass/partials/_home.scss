@@ -1,0 +1,131 @@
+// Home
+
+.home-content {
+  padding-top: 1rem;
+  position: relative;
+  background-color: $body-color;
+}
+
+.full-bleed,
+.full-bleed-push {
+  height: 100vh;
+}
+
+.full-bleed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.full-bleed__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  width: 102%;
+  height: 102%;
+  pointer-events: none;
+}
+
+.splash-date-item {
+  font-family: $font-stack-title;
+  font-size: 226px;
+  line-height: 1;
+  letter-spacing: -3.3px;
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+}
+
+.splash-date__1 {
+  top: 5%;
+  left: 5%;
+}
+
+.splash-date__2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.splash-date__3 {
+  bottom: 5%;
+  right: 5%;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.mc-signup {
+  text-align: left;
+
+  label {
+    @include font-subtitle;
+    display: block;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 32px;
+    line-height: 1;
+    width: 100%;
+    background: transparent;
+  }
+
+  input,
+  textarea {
+    border: 1px solid $text-color;
+    padding: 5px 10px;
+  }
+
+  input,
+  textarea,
+  select {
+    transition: all 0.2s ease-in-out;
+    outline: none;
+
+    &:focus {
+      box-shadow: 0 0 5px $text-color;
+    }
+  }
+
+  .submit-button-column {
+    text-align: center;
+  }
+
+  .submit-button-wrapper {
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transform: translate3d(0, 0, 0);
+
+    .full-bleed {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover {
+      .full-bleed {
+        opacity: 1;
+      }
+
+      .submit-button {
+        color: #fff;
+      }
+    }
+  }
+
+  .submit-button {
+    @include font-subtitle;
+    padding: 1rem;
+    width: auto;
+    position: relative;
+    z-index: 1;
+  }
+}

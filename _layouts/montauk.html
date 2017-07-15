@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  {% capture layout %}{% if page.layout %}layout--{{ page.layout }}{% endif %}{% endcapture %}
+  <body class="container-fluid {{ layout }}">
+    {% include header.html %}
+    <div class="page-splash">
+      <div class="row text-left">
+        <div class="col-sm-8">
+          <div class="row">
+            <img src="http://via.placeholder.com/990x690">
+          </div>
+        </div>
+        <div class="page-splash__title">
+          <h1>Montauk, NY</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="content-container">
+        <p>
+          From dove grey skies kissing the electric ocean<br class="sm-inline">
+          to romantic clouds hovering over the dunes,<br class="sm-inline">
+          the textures of Montauk resemble a surreal<br class="sm-inline">
+          union of the elements.
+        </p>
+        <p>
+          As the promise of Spring slowly transcends,<br class="sm-inline">
+          we’ll honor our love in a celebration of Mother Earth and the richness she provides at Gurney's<br class="sm-inline">
+          Montauk on April 7, 2018.
+        </p>
+      </div>
+    </div>
+
+    <div class="content-container">
+      <h2>Getting to<br class="sm-inline">Montauk</h2>
+    </div>
+
+    <div class="block">
+      <div class="site-container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div>Car</div>
+            <div class="font-small">
+              Montauk is 2.5 hour drive from New York City.
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div>Bus</div>
+            <div class="font-small">
+              Take the Hampton Jitney bus from New York City, JFK, LaGuardia or MacArthur Airport
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div>Plane</div>
+            <div class="font-small">
+              Closest option is to fly into MacArthur Airport (ISP). The drive to Gurney's from ISP is about 1.5 hours.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="content-container">
+            <h3>Where to Stay</h3>
+            <p>
+              While all our events will be at Gurney's<br class="sm-inline">
+              Resort, anywhere else in Montauk<br class="sm-inline">
+              is a quick drive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>

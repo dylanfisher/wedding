@@ -1,0 +1,48 @@
+///////////////////////////////////////////////////
+// Typography Variables
+///////////////////////////////////////////////////
+
+//
+// Font stacks
+//
+
+$font-stack-regular: 'founders-grotesk-regular', sans-serif;
+$font-stack-bold: 'founders-grotesk-semibold', sans-serif;
+$font-stack-title: 'freya-medium', serif;
+
+///////////////////////////////////////////////////
+// Typography definitions
+///////////////////////////////////////////////////
+
+@mixin font-regular {
+  font-family: $font-stack-regular;
+  font-size: 41px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.font-regular { @include font-regular; }
+
+@mixin font-small {
+  font-family: $font-stack-regular;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.font-small { @include font-small; }
+
+@mixin font-title {
+  font-family: $font-stack-title;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: -2.8px;
+}
+.font-title { @include font-title; }
+
+@mixin font-subtitle {
+  font-family: $font-stack-bold;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+.font-subtitle { @include font-subtitle; }

@@ -1,0 +1,17 @@
+.nav {
+  font-family: $font-stack-regular;
+  font-size: 23px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  position: fixed;
+  top: $gutter * 2;
+  right: $gutter * 4;
+  text-align: right;
+  z-index: 100;
+
+  .layout--home & {
+    a {
+      color: #fff;
+    }
+  }
+}
