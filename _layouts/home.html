@@ -9,8 +9,12 @@
         <span class="splash-date-item splash-date__1">04</span>
         <span class="splash-date-item splash-date__2">07</span>
         <span class="splash-date-item splash-date__3">18</span>
-        <!-- <video src="http://dcgpqqlepqtz2.cloudfront.net/etc/montauk_smoke_2.mp4" autoplay loop muted></video> -->
-        <video class="full-bleed__video" src="local_content/montauk_smoke_2.mp4" autoplay loop muted></video>
+        {% if jekyll.environment == "production" %}
+          {% assign video_url = 'http://dcgpqqlepqtz2.cloudfront.net/etc/montauk_smoke_2.mp4' %}
+        {% else %}
+          {% assign video_url = 'local_content/montauk_smoke_2.mp4' %}
+        {% endif %}
+        <video class="full-bleed__video" src="{{ video_url }}" autoplay loop muted></video>
       </div>
       <div class="full-bleed-push"></div>
     </div>
