@@ -3,12 +3,10 @@ html {
   text-rendering: optimizeLegibility;
   font-style: normal;
   box-sizing: border-box;
+  font-feature-settings: 'liga' 0;
 
   @include breakpoint(sm) {
     text-rendering: geometricPrecision;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -moz-font-feature-settings: "liga" on;
   }
 }
 

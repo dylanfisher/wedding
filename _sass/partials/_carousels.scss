@@ -1,0 +1,53 @@
+// Carousels
+
+.carousel {
+  background-color: #fff;
+  padding: 3rem 0;
+  position: relative;
+}
+
+.carousel__caption-column {
+  @include breakpoint(sm) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.carousel__caption {
+  @include font-small;
+  text-align: left;
+}
+
+.flickity-prev-next-button {
+  background: transparent !important;
+
+  svg {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &:hover {
+    svg {
+      transform: scale(1.5);
+    }
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:active {
+    svg {
+      transform: scale(1);
+    }
+  }
+}
+
+.flickity-prev-next-button.previous {
+  left: 20px !important;
+}
+
+.flickity-prev-next-button.next {
+  right: 20px !important;
+}

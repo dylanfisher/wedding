@@ -18,25 +18,30 @@
     </div>
 
     <div class="block">
-      <div class="content-container">
-        <p>
-          From dove grey skies kissing the electric ocean<br class="sm-inline">
-          to romantic clouds hovering over the dunes,<br class="sm-inline">
-          the textures of Montauk resemble a surreal<br class="sm-inline">
-          union of the elements.
-        </p>
-        <p>
-          As the promise of Spring slowly transcends,<br class="sm-inline">
-          we’ll honor our love in a celebration of Mother Earth and the richness she provides at Gurney's<br class="sm-inline">
-          Montauk on April 7, 2018.
-        </p>
+      <div class="row">
+        <div class="site-container">
+          <div class="col-sm-10">
+            <p>
+              From dove grey skies kissing the electric ocean<br class="sm-inline">
+              to romantic clouds hovering over the dunes,<br class="sm-inline">
+              the textures of Montauk resemble a surreal<br class="sm-inline">
+              union of the elements.
+            </p>
+            <p>
+              As the promise of Spring slowly transcends,<br class="sm-inline">
+              we’ll honor our love in a celebration of Mother Earth and the richness she provides at Gurney's<br class="sm-inline">
+              Montauk on April 7, 2018.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="block">
-      <div class="content-container">
-        <h2>Getting to<br class="sm-inline">Montauk</h2>
-      </div>
+      <h2>
+        Getting to<br class="sm-inline">
+        Montauk
+      </h2>
     </div>
 
     <div class="block">
@@ -75,13 +80,64 @@
 
     <div class="block">
       <div class="row">
-        <div class="col-sm-12">
-          <div class="content-container">
+        <div class="site-container">
+          <div class="col-sm-8">
             <h3>Where to Stay</h3>
             <p>
               While all our events will be at Gurney's<br class="sm-inline">
               Resort, anywhere else in Montauk<br class="sm-inline">
               is a quick drive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="row">
+        <div class="carousel">
+          {% capture carousel_slide %}
+            <div class="col-sm-10 col-sm-offset-1">
+              <div class="site-container">
+                <div class="row">
+                  <div class="carousel__caption-column col-sm-4">
+                    <div class="carousel__caption">
+                      <p>
+                        <strong>Gurney's Resort and Seawater Spa</strong>
+                        <br>
+                        Room block under Fisher/Simovich Wedding available until January 10, 2018. Please call the hotel's reservation manager, Amy Florence at (631) 668-1752 for info.
+                      </p>
+                      <p>
+                        290 Old Montauk Highway
+                        <br>
+                        Montauk, NY 11954
+                      </p>
+                      <p>
+                        <a href="http://www.gurneysmontauk.com/" class="default-link">More Info</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-sm-offset-6">
+                    <img src="http://via.placeholder.com/660x580">
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endcapture %}
+          {% for num in (1..5) %}
+            {{ carousel_slide }}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="row">
+        <div class="site-container">
+          <div class="col-sm-10">
+            <h2>Weather</h2>
+            <p>
+              Montauk is right on the Atlantic Ocean, so sea breeze is common all year. Grey skies and cold weather are common in April, as Winter overstays its welcome most years. The event will have an indoor and heated outdoor section, but plan accordingly.
             </p>
           </div>
         </div>
