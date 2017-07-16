@@ -36,11 +36,15 @@ html {
 
 .page-splash {
   position: relative;
-  height: 60vh;
+  margin-bottom: 4rem;
 }
 
 .page-splash__title {
   position: absolute;
   top: 25vh;
   left: 50%;
+}
+
+.highlight {
+  background-color: #fff;
 }

@@ -11,6 +11,16 @@
 }
 
 @font-face {
+  font-family: 'founders-grotesk-regular';
+  src: url('fonts/FoundersGroteskWeb-Semibold.eot');
+  src: url('fonts/FoundersGroteskWeb-Semibold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/FoundersGroteskWeb-Semibold.woff2') format('woff2'),
+       url('fonts/FoundersGroteskWeb-Semibold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'founders-grotesk-semibold';
   src: url('fonts/FoundersGroteskWeb-Semibold.eot');
   src: url('fonts/FoundersGroteskWeb-Semibold.eot?#iefix') format('embedded-opentype'),
