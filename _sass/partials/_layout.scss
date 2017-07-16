@@ -30,17 +30,21 @@ html {
 
 .footer {
   background-color: $body-color;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   position: relative;
 }
 
 .page-splash {
   position: relative;
-  height: 60vh;
+  margin-bottom: 4rem;
 }
 
 .page-splash__title {
   position: absolute;
   top: 25vh;
   left: 50%;
+}
+
+.highlight {
+  background-color: #fff;
 }

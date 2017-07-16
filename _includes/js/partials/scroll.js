@@ -1,25 +1,5 @@
-// Namespace
-var App = {};
-
-// Load
-$(function() {
-  App.scrollTop = $(window).scrollTop();
-  App.windowWidth  = $(window).width();
-  App.windowHeight = $(window).height();
-});
-
-// Resize
-$(window).on('resize', function() {
-  App.windowWidth = $(window).width();
-  App.windowHeight = $(window).height();
-});
-
 // Scroll
-$(window).on('scroll', function() {
-  App.scrollTop = $(window).scrollTop();
-});
 
-// Custom scripts
 $(function() {
   var $html = $('html');
   var $homeContent = $('.home-content');
@@ -39,7 +19,17 @@ $(function() {
     });
 
     $(window).trigger('scroll.homeContentNav');
-  } else {
-    $(window).off('scroll.homeContentNav');
   }
+
+  var headerGradientActivePoint = 300;
+
+  $(window).on('scroll.headerScroll', function() {
+    if ( App.scrollTop >= headerGradientActivePoint ) {
+      $html.addClass('has-scrolled');
+    } else {
+      $html.removeClass('has-scrolled');
+    }
+  });
+
+  $(window).trigger('scroll.headerScroll');
 });
