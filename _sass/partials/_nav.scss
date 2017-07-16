@@ -9,9 +9,39 @@
   text-align: right;
   z-index: 100;
 
+  a {
+    transition: color 0.3s ease-in-out;
+
+    &.active {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: -2px;
+        right: -14px;
+        width: 6px;
+        height: 6px;
+        background-color: #04203E;
+        border-radius: 50%;
+      }
+    }
+  }
+
   .layout--home & {
     a {
       color: #fff;
+    }
+  }
+}
+
+.nav-active {
+  .layout--home {
+    .nav {
+      a {
+        color: #000;
+      }
     }
   }
 }

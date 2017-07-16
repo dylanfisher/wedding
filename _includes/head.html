@@ -1,5 +1,6 @@
 <head>
   <meta charset="utf-8">
+{% include ascii.html %}
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -9,8 +10,4 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel=icon href=/assets/favicon.png>
-
-  {% include scripts.html %}
-
-  <!-- Latest Deploy {{ site.time }} -->
 </head>
