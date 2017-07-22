@@ -3,6 +3,8 @@
 ---
 
 {% include js/vendor/flickity.pkgd.min.js %}
+{% include js/vendor/jquery.marquee.min.js %}
 {% include js/partials/main.js %}
 {% include js/partials/carousels.js %}
+{% include js/partials/auto_carousels.js %}
 {% include js/partials/scroll.js %}

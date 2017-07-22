@@ -9,6 +9,7 @@
 @import "core/mixins/breakpoints";
 @import "core/typography_engine";
 @import "core/mixins/ui";
+@import "core/mixins/layout";
 
 // Base - basic foundation and structural styles
 @import "base/normalize";
@@ -23,6 +24,8 @@
 @import "partials/home";
 @import "partials/montauk";
 @import "partials/order_of_events";
+@import "partials/dylan_nika";
 @import "partials/carousels";
+@import "partials/auto_carousels";
 
 @import "vendor/flickity";

@@ -1,0 +1,63 @@
+// Dylan and Nika
+
+.timeline__title {
+  margin-bottom: 1rem;
+}
+
+.timeline__line,
+.timeline__years {
+  width: 625px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.timeline__line {
+  margin-bottom: 1rem;
+  height: 1px;
+  background-color: $text-color;
+}
+
+.timeline__line__point,
+.timeline__years__year {
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.timeline__line__point {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: $text-color;
+  top: -4px;
+}
+
+.timeline__years__year {
+  bottom: -1rem;
+}
+
+.timeline__line__point--1,
+.timeline__years__year--1 {
+  left: 0;
+}
+
+.timeline__line__point--2,
+.timeline__years__year--2 {
+  left: 25%;
+}
+
+.timeline__line__point--3,
+.timeline__years__year--3 {
+  left: 50%;
+}
+
+.timeline__line__point--4,
+.timeline__years__year--4 {
+  left: 75%;
+}
+
+.timeline__line__point--5,
+.timeline__years__year--5 {
+  left: 100%;
+}

@@ -44,13 +44,12 @@
 }
 
 .weather-block {
+  @include gutter-offset;
   position: relative;
   overflow: hidden;
   padding-top: $block-spacing;
   padding-bottom: $block-spacing;
   margin-top: -$block-spacing;
-  margin-left: -$gutter;
-  margin-right: -$gutter;
 }
 
 .weather-block__video {

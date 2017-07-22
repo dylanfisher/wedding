@@ -2,18 +2,225 @@
 <html>
   {% include head.html %}
   {% capture layout %}{% if page.layout %}layout--{{ page.layout }}{% endif %}{% endcapture %}
-  <body class="container-fluid {{ layout }}">
-    {% include header.html %}
+  <body class="{{ layout }}">
+    <div class="container-fluid">
+      {% include header.html %}
 
-    <div class="page-splash">
-      <div class="row text-left">
-        <div class="col-sm-8">
-          <div class="row">
-            <img src="../assets/images/nika_dylan/nika_dylan_splash.jpg">>
+      <div class="page-splash">
+        <div class="row text-left">
+          <div class="col-sm-8">
+            <div class="row">
+              <img src="../assets/images/nika_dylan/hero.jpg">
+            </div>
+          </div>
+          <div class="page-splash__title">
+            <h1>Dylan &amp; Nika</h1>
           </div>
         </div>
-        <div class="page-splash__title">
-          <h1>Dylan &amp; Nika</h1>
+      </div>
+
+      <div class="block">
+        <div class="site-container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="timeline">
+                <div class="timeline__title font-subtitle">
+                  The<br>
+                  Story of<br>
+                  Us
+                </div>
+                <div class="timeline__line">
+                  <div class="timeline__line__point timeline__line__point--1"></div>
+                  <div class="timeline__line__point timeline__line__point--2"></div>
+                  <div class="timeline__line__point timeline__line__point--3"></div>
+                  <div class="timeline__line__point timeline__line__point--4"></div>
+                  <div class="timeline__line__point timeline__line__point--5"></div>
+                </div>
+                <div class="timeline__years">
+                  <div class="timeline__years__year timeline__years__year--1 subtitle"><a href="#2013" class="blank-link">2013</a></div>
+                  <div class="timeline__years__year timeline__years__year--2 subtitle"><a href="#2014" class="blank-link">2014</a></div>
+                  <div class="timeline__years__year timeline__years__year--3 subtitle"><a href="#2015" class="blank-link">2015</a></div>
+                  <div class="timeline__years__year timeline__years__year--4 subtitle"><a href="#2016" class="blank-link">2016</a></div>
+                  <div class="timeline__years__year timeline__years__year--5 subtitle"><a href="#2017" class="blank-link">2017</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="site-container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h2 id="2013">2013</h2>
+            </div>
+            <div class="col-sm-7 text-left">
+              <p>Our romance began in 2013 when our paths crossed at Linked by Air, a design studio in New York, where we were both working.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="site-container text-left">
+          <div class="row">
+            <div class="col-sm-7 col-sm-push-3 col-sm-offset-1 va-middle">
+              <img src="../assets/images/nika_dylan/2013/working-together.jpg">
+            </div>
+            <div class="col-sm-3 col-sm-pull-7 va-middle">
+              <div class="caption-constrainer">
+                <p class="font-subtitle">
+                  WORKING LATE FOR AN EVENT OCTOBER 2013
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <p class="font-subtitle">
+          This year we fell in love
+        </p>
+      </div>
+
+      <div class="block">
+        <div class="auto-carousel row">
+          {% for index in (1..4) %}
+            <img src="../assets/images/nika_dylan/2013/carousel-{{ index }}.jpg">
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="site-container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h2 id="2014">2014</h2>
+            </div>
+            <div class="col-sm-7 text-left">
+              <p>From traveling to Norway, meeting each other's parents, and moving in, 2014 was full of milestones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="site-container">
+          <div class="row">
+            <div class="col-sm-12">
+              <img src="../assets/images/nika_dylan/2014/norway1.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="row">
+          <div class="carousel">
+            <!-- arousel item -->
+            <div class="col-sm-10 col-sm-offset-1">
+              <div class="site-container text-left">
+                <div class="row">
+                  <div class="carousel__caption-column col-sm-4">
+                    <div class="carousel__caption">
+                      <div class="caption-constrainer">
+                        <p class="font-subtitle">DISCOVERING THE "HERITAGE HOMELAND"</p>
+                        <p class="font-subtitle">JULY 2014</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-8 col-sm-offset-4 text-center">
+                    <img src="../assets/images/nika_dylan/2014/norway-carousel/norway-firstimage.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / carousel item -->
+            {% for index in (1..7) %}
+              <!-- arousel item -->
+              <div class="col-sm-10 col-sm-offset-1">
+                <div class="site-container text-left">
+                  <div class="row">
+                    <div class="col-sm-12 text-center">
+                      <img src="../assets/images/nika_dylan/2014/norway-carousel/carousel-{{ index }}.jpg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- / carousel item -->
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="site-container">
+          <div class="row">
+            <div class="col-sm-12">
+              <img src="../assets/images/nika_dylan/2014/astoria.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <p class="font-subtitle">
+          We made Astoria, NY <span class="highlight">our home</span>.
+        </p>
+      </div>
+
+      <div class="block">
+        <div class="site-container">
+          <div class="row">
+            <div class="col-sm-7 va-middle">
+              <img src="../assets/images/nika_dylan/2014/moving-in-1.jpg">
+            </div>
+            <div class="col-sm-5 va-middle">
+              <img src="../assets/images/nika_dylan/2014/moving-in-2.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="site-container">
+          <div class="row">
+            <div class="col-sm-4 va-middle text-center">
+              <div class="caption-constrainer">
+                <p class="font-subtitle">CHEERLEADER &amp; FOOTBALL PLAYER</p>
+                <p class="font-subtitle">HALLOWEEN 2014</p>
+              </div>
+            </div>
+            <div class="col-sm-4 va-middle">
+              <img src="../assets/images/nika_dylan/2014/halloween-3.jpg">
+            </div>
+            <div class="col-sm-4 va-middle">
+              <img src="../assets/images/nika_dylan/2014/halloween-1.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <p class="font-subtitle">
+          We spend <span class="highlight">Christmas in Seattle</span><br>for the first time.
+        </p>
+      </div>
+    </div>
+    <!-- container-fluid -->
+
+    <div class="block overflow-hidden">
+      <div class="row">
+        <div class="col-sm-4 va-middle text-center">
+          <img src="../assets/images/nika_dylan/2014/xmas-carousel/xmas-1.jpg">
+        </div>
+        <div class="col-sm-4 va-middle">
+          <img src="../assets/images/nika_dylan/2014/xmas-carousel/xmas-2.jpg">
+        </div>
+        <div class="col-sm-4 va-middle">
+          <img src="../assets/images/nika_dylan/2014/xmas-carousel/xmas-3.jpg">
         </div>
       </div>
     </div>
@@ -22,30 +229,17 @@
       <div class="site-container">
         <div class="row">
           <div class="col-sm-4">
-            <h2>2013</h2>
+            <h2 id="2015">2015</h2>
           </div>
-          <div class="col-sm-8 text-left">
-            <p>Our romance began in 2013 when our paths crossed at Linked by Air, a design studio in New York, where we were both working.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="block">
-      <div class="site-container">
-        <div class="row">
-          <div class="col-sm-3 col-sm-offset-1">
-            <h2>2013</h2>
-          </div>
-          <div class="col-sm-7">
-            <p>
-              <strong>WORKING LATE FOR AN EVENT OCTOBER 2013</strong>
-            </p>
+          <div class="col-sm-7 text-left">
+            <p>Adventuring to Miami, Montauk, Serbia and Italy defined 2015.</p>
           </div>
         </div>
       </div>
     </div>
 
-    {% include footer.html %}
+    <div class="container-fluid">
+      {% include footer.html %}
+    </div>
   </body>
 </html>

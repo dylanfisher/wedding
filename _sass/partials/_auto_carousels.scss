@@ -1,0 +1,12 @@
+// Auto carousels
+
+.auto-carousel {
+  @include gutter-offset;
+  white-space: nowrap;
+  overflow: hidden;
+
+  img {
+    max-height: 500px;
+    margin-right: $gutter * 2;
+  }
+}
