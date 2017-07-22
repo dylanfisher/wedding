@@ -4,9 +4,48 @@
   {% capture layout %}{% if page.layout %}layout--{{ page.layout }}{% endif %}{% endcapture %}
   <body class="container-fluid {{ layout }}">
     {% include header.html %}
-    <div class="content">
-      {{ content }}
+
+    <div class="page-splash">
+      <div class="row text-left">
+        <div class="col-sm-8">
+          <div class="row">
+            <img src="../assets/images/nika_dylan/nika_dylan_splash.jpg">>
+          </div>
+        </div>
+        <div class="page-splash__title">
+          <h1>Dylan &amp; Nika</h1>
+        </div>
+      </div>
     </div>
+
+    <div class="block">
+      <div class="site-container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2>2013</h2>
+          </div>
+          <div class="col-sm-8 text-left">
+            <p>Our romance began in 2013 when our paths crossed at Linked by Air, a design studio in New York, where we were both working.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="site-container">
+        <div class="row">
+          <div class="col-sm-3 col-sm-offset-1">
+            <h2>2013</h2>
+          </div>
+          <div class="col-sm-7">
+            <p>
+              <strong>WORKING LATE FOR AN EVENT OCTOBER 2013</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     {% include footer.html %}
   </body>
 </html>

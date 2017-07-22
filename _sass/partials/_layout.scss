@@ -17,7 +17,7 @@ html {
 }
 
 .block {
-  margin: 0 auto 4rem;
+  margin: 0 auto $block-spacing;
 }
 
 .sm-inline {
@@ -36,7 +36,7 @@ html {
 
 .page-splash {
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: $block-spacing;
 }
 
 .page-splash__title {
