@@ -9,8 +9,7 @@ $(function() {
     $carousel.flickity({
       imagesLoaded: true,
       wrapAround: true,
-      selectedAttraction: 0.01,
-      friction: 0.15,
+      selectedAttraction: 0.017,
       pageDots: false,
       arrowShape: {
         x0: 10,
@@ -18,6 +17,10 @@ $(function() {
         x2: 60, y2: 15,
         x3: 60
       }
+    });
+
+    $carousel.on('staticClick.flickity', function() {
+      $carousel.flickity('next');
     });
   });
 });

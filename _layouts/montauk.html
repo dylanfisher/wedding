@@ -29,10 +29,20 @@
             </p>
             <p>
               As the promise of Spring slowly transcends,<br class="sm-inline">
-              we’ll honor our love in a celebration of Mother Earth and the richness she provides at Gurney's<br class="sm-inline">
+              we’ll honor our love in a celebration of Mother Earth<br class="sm-inline">
+              and the richness she provides at Gurney's<br class="sm-inline">
               Montauk on April 7, 2018.
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="fish-animation">
+        <div class="fish-animation__background"></div>
+        <div class="fish-animation__svg-wrapper">
+          {% include svg/fish_cutout.svg %}
         </div>
       </div>
     </div>
@@ -67,11 +77,11 @@
           </div>
           <div class="col-sm-4">
             <div class="getting-here-icon-wrapper">
-              {% include svg/plane.svg %}
+              {% include svg/Train.svg %}
             </div>
-            <div>Plane</div>
+            <div>Train</div>
             <div class="font-small">
-              Closest option is to fly into MacArthur Airport (ISP). The drive to Gurney's from ISP is about 1.5 hours.
+              Train directions lorem ipsum
             </div>
           </div>
         </div>
@@ -96,6 +106,7 @@
     <div class="block">
       <div class="row">
         <div class="carousel">
+          <!-- arousel item -->
           <div class="col-sm-10 col-sm-offset-1">
             <div class="site-container">
               <div class="row">
@@ -104,7 +115,7 @@
                     <p>
                       <strong>Gurney's Resort and Seawater Spa</strong>
                       <br>
-                      Room block under Fisher/Simovich Wedding available until January 10, 2018. Please call the hotel's reservation manager, Amy Florence at (631) 668-1752 for info.
+                      Room block under Fisher/Simovich Wedding available until January 10, 2018. Please call the hotel's reservation manager, Amy Florence at (631) 668-1752 for info.
                     </p>
                     <p>
                       290 Old Montauk Highway
@@ -117,11 +128,13 @@
                   </div>
                 </div>
                 <div class="col-sm-6 col-sm-offset-6">
-                  <img src="http://via.placeholder.com/660x580">
+                  <img src="../assets/images/montauk/carousel-gurneys.jpg">
                 </div>
               </div>
             </div>
           </div>
+          <!-- / carousel item -->
+          <!-- carousel item -->
           <div class="col-sm-10 col-sm-offset-1">
             <div class="site-container">
               <div class="row">
@@ -143,22 +156,57 @@
                   </div>
                 </div>
                 <div class="col-sm-6 col-sm-offset-6">
-                  <img src="http://via.placeholder.com/660x580">
+                  <img src="../assets/images/montauk/carousel_ocean-resort.jpg">
                 </div>
               </div>
             </div>
           </div>
+          <!-- / carousel item -->
+          <!-- arousel item -->
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="site-container">
+              <div class="row">
+                <div class="carousel__caption-column col-sm-4">
+                  <div class="carousel__caption">
+                    <p>
+                      <strong>Surflodge</strong>
+                      <br>
+                      Lorem ipsum
+                    </p>
+                    <p>
+                      123 address test
+                      <br>
+                      Montauk, NY 11954
+                    </p>
+                    <p>
+                      <a href="http://www.gurneysmontauk.com/" class="default-link">More Info</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-sm-offset-6">
+                  <img src="../assets/images/montauk/carousel-surflodge.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- / carousel item -->
         </div>
       </div>
     </div>
 
-    <div class="block">
+    <div class="block weather-block">
+      {% if jekyll.environment == "production" %}
+        {% assign video_url = 'http://dcgpqqlepqtz2.cloudfront.net/etc/sky_video.mp4' %}
+      {% else %}
+        {% assign video_url = '/local_content/sky_video.mp4' %}
+      {% endif %}
+      <video class="weather-block__video" src="{{ video_url }}" autoplay loop muted></video>
       <div class="row">
         <div class="site-container">
           <div class="col-sm-10">
             <h2>Weather</h2>
             <p>
-              Montauk is right on the Atlantic Ocean, so sea breeze is common all year. Grey skies and cold weather are common in April, as Winter overstays its welcome most years. The event will have an indoor and heated outdoor section, but plan accordingly.
+              Montauk is right on the Atlantic Ocean, so sea breeze is common all year. Grey skies and cold weather are common in April, as Winter overstays its welcome most years. The event will have an indoor and heated outdoor section, but plan accordingly.
             </p>
           </div>
         </div>

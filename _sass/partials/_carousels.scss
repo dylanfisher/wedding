@@ -4,6 +4,10 @@
   background-color: #fff;
   padding: 3rem 0;
   position: relative;
+
+  img {
+    max-height: 700px;
+  }
 }
 
 .carousel__caption-column {

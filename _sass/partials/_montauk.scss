@@ -1,5 +1,36 @@
 // Montauk
 
+.fish-animation {
+  width: 396px;
+  height: 328px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.fish-animation__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(../assets/images/fish_bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.fish-animation svg,
+.fish-animation__svg-wrapper {
+  width: 515px;
+  height: 515px;
+}
+
+.fish-animation__svg-wrapper {
+  animation: fishLoop 6s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin: -93px 0 0 -54px;
+}
+
 .getting-here-icon-wrapper {
   height: 100px;
   position: relative;
@@ -10,4 +41,29 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.weather-block {
+  @include gutter-offset;
+  position: relative;
+  overflow: hidden;
+  padding-top: $block-spacing;
+  padding-bottom: $block-spacing;
+  margin-top: -$block-spacing;
+}
+
+.weather-block__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+@keyframes fishLoop {
+  0%   { transform: rotate(0deg); }
+  90% { transform: rotate(-360deg); }
+  100% { transform: rotate(-360deg); }
 }

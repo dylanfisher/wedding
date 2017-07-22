@@ -17,7 +17,7 @@ html {
 }
 
 .block {
-  margin: 0 auto 4rem;
+  margin: 0 auto $block-spacing;
 }
 
 .sm-inline {
@@ -36,7 +36,7 @@ html {
 
 .page-splash {
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: $block-spacing;
 }
 
 .page-splash__title {
@@ -47,4 +47,20 @@ html {
 
 .highlight {
   background-color: #fff;
+}
+
+.caption-constrainer {
+  margin-top: 5px;
+  text-align: left;
+
+  @include breakpoint(sm) {
+    max-width: 220px;
+    margin-top: 0;
+    text-align: center;
+  }
+}
+
+.text-center .caption-constrainer {
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -66,7 +66,7 @@
 
   label {
     @include font-subtitle;
-    display: block;
+    display: inline-block;
   }
 
   input,
@@ -75,13 +75,15 @@
     font-size: 32px;
     line-height: 1;
     width: 100%;
+    max-width: 100%;
     background: transparent;
   }
 
   input,
   textarea {
     border: 1px solid $text-color;
-    padding: 5px 10px;
+    padding: 0 15px;
+    line-height: 78px;
   }
 
   input,
@@ -107,8 +109,13 @@
     transform: translate3d(0, 0, 0);
 
     .full-bleed {
+      display: none;
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
+
+      @include breakpoint(sm) {
+        display: block;
+      }
     }
 
     &:hover {
@@ -125,7 +132,7 @@
   .submit-button {
     @include font-subtitle;
     padding: 1rem;
-    width: auto;
+    width: 350px;
     position: relative;
     z-index: 1;
   }
