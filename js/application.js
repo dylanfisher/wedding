@@ -13,3 +13,4 @@
 {% include js/partials/smooth_scroll.js %}
 {% include js/partials/scroll.js %}
 {% include js/partials/sticky_titles.js %}
+{% include js/partials/form_password.js %}

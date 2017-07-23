@@ -76,6 +76,10 @@
 .mc-signup {
   text-align: left;
 
+  .mc-form {
+    display: none;
+  }
+
   label {
     @include font-subtitle;
     display: inline-block;
