@@ -18,6 +18,17 @@
 }
 .blank-link-hover { @include blank-link-hover; }
 
+@mixin default-link {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid;
+
+  &:hover {
+    border-bottom: 1px solid transparent;
+  }
+}
+.default-link { @include default-link; }
+
 //
 // Lists
 //
