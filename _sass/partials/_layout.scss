@@ -1,7 +1,7 @@
 html {
   background-color: $body-color;
   color: $text-color;
-  text-align: center;
+  // text-align: center;
 }
 
 .site-container {
@@ -23,7 +23,7 @@ html {
 .sm-inline {
   display: none;
 
-  @include breakpoint(sm) {
+  @include breakpoint(md) {
     display: inline;
   }
 }
@@ -52,6 +52,8 @@ html {
 .caption-constrainer {
   margin-top: 5px;
   text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 
   @include breakpoint(sm) {
     max-width: 220px;

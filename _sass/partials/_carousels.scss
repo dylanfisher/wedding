@@ -11,6 +11,8 @@
 }
 
 .carousel__caption-column {
+  text-align: center;
+
   @include breakpoint(sm) {
     position: absolute;
     top: 50%;
