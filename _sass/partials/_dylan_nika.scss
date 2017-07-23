@@ -30,7 +30,14 @@
   height: 9px;
   border-radius: 50%;
   background-color: $text-color;
-  top: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.5) translateY(-50%);
+  }
 }
 
 .timeline__years__year {
@@ -60,4 +67,19 @@
 .timeline__line__point--5,
 .timeline__years__year--5 {
   left: 100%;
+}
+
+.text-fade-in {
+  position: relative;
+}
+
+.text-fade-in__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100%;
+  max-width: 850px;
+  font-size: 54px;
 }

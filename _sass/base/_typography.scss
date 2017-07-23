@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 
   &:first-child {
-    // margin-top: 0;
+    margin-top: 0;
   }
 }
 
@@ -27,7 +27,7 @@ ul, p {
 }
 
 .small-title {
-  font-family: $font-stack-title;
+  font-family: $font-stack-freya;
   font-size: 56px;
   line-height: 1;
   letter-spacing: -0.91px;

@@ -8,7 +8,7 @@
 
 $font-stack-regular: 'founders-grotesk-regular', sans-serif;
 $font-stack-bold: 'founders-grotesk-semibold', sans-serif;
-$font-stack-title: 'freya-medium', serif;
+$font-stack-freya: 'freya-medium', serif;
 
 ///////////////////////////////////////////////////
 // Typography definitions
@@ -39,7 +39,7 @@ $font-stack-title: 'freya-medium', serif;
 .font-small { @include font-small; }
 
 @mixin font-intro-text {
-  font-family: $font-stack-title;
+  font-family: $font-stack-freya;
   font-size: 33px;
   line-height: 1.4;
   letter-spacing: -1px;
@@ -52,7 +52,7 @@ $font-stack-title: 'freya-medium', serif;
 .font-intro-text { @include font-intro-text; }
 
 @mixin font-title {
-  font-family: $font-stack-title;
+  font-family: $font-stack-freya;
   font-size: 60px;
   line-height: 1;
   letter-spacing: -2.8px;
@@ -63,10 +63,22 @@ $font-stack-title: 'freya-medium', serif;
 }
 .font-title { @include font-title; }
 
+@mixin font-jumbo {
+  font-family: $font-stack-freya;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -2.8px;
+
+  @include breakpoint(sm) {
+    font-size: 99px;
+  }
+}
+.font-jumbo { @include font-jumbo; }
+
 @mixin font-subtitle {
   font-family: $font-stack-bold;
   font-size: 15px;
-  line-height: 1;
+  line-height: 1.1;
   letter-spacing: 2.8px;
   text-transform: uppercase;
 
