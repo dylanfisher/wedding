@@ -7,6 +7,11 @@ html {
 .site-container {
   max-width: $site-max-width;
   margin: 0 auto;
+
+  @include breakpoint(md) {
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
 }
 
 .content-container {
@@ -17,7 +22,8 @@ html {
 }
 
 .block {
-  margin: 0 auto $block-spacing;
+  margin: 0 auto;
+  padding-bottom: $block-spacing;
 }
 
 .sm-inline {

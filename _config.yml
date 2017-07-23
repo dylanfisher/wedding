@@ -26,7 +26,7 @@ markdown: kramdown
 
 # Site nav
 navigation:
-  - Save the Date: /
+  - Save the Date: /#save-the-date
   - Montauk: /montauk/
   - Order of Events: /order-of-events/
   - Dylan & Nika: /dylan-nika/
