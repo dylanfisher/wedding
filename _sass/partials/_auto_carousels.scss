@@ -3,6 +3,8 @@
 .auto-carousel {
   white-space: nowrap;
   overflow: hidden;
+  font-size: 0;
+  letter-spacing: -4px;
 
   img {
     max-height: 500px;
