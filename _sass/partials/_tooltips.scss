@@ -1,0 +1,8 @@
+// Tooltips
+
+.ui-tooltip-content {
+  @include font-small;
+  padding: 20px;
+  background-color: $medium-pink;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
