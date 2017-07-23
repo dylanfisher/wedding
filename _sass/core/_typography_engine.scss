@@ -17,7 +17,7 @@ $font-stack-title: 'freya-medium', serif;
 @mixin font-regular {
   font-family: $font-stack-regular;
   font-size: 28px;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 0;
 
   @include breakpoint(sm) {
@@ -28,8 +28,8 @@ $font-stack-title: 'freya-medium', serif;
 
 @mixin font-small {
   font-family: $font-stack-regular;
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 19px;
+  line-height: 1.2;
   letter-spacing: 0.4px;
 
   // @include breakpoint(sm) {
@@ -37,6 +37,19 @@ $font-stack-title: 'freya-medium', serif;
   // }
 }
 .font-small { @include font-small; }
+
+@mixin font-intro-text {
+  font-family: $font-stack-title;
+  font-size: 33px;
+  line-height: 1.4;
+  letter-spacing: -1px;
+  text-align: left;
+
+  @include breakpoint(sm) {
+    font-size: 32px;
+  }
+}
+.font-intro-text { @include font-intro-text; }
 
 @mixin font-title {
   font-family: $font-stack-title;
@@ -52,13 +65,13 @@ $font-stack-title: 'freya-medium', serif;
 
 @mixin font-subtitle {
   font-family: $font-stack-bold;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1;
   letter-spacing: 2.8px;
   text-transform: uppercase;
 
   @include breakpoint(sm) {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 .font-subtitle { @include font-subtitle; }
