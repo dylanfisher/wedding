@@ -1,6 +1,10 @@
 // Scroll
 
 $(function() {
+  //
+  // Home scroll
+  //
+
   var $html = $('html');
   var $homeContent = $('.home-content');
   var $nav = $('.nav');
@@ -21,6 +25,10 @@ $(function() {
     $(window).trigger('scroll.homeContentNav');
   }
 
+  //
+  // Header gradient scroll
+  //
+
   var headerGradientActivePoint = 300;
 
   $(window).on('scroll.headerScroll', function() {
@@ -32,4 +40,34 @@ $(function() {
   });
 
   $(window).trigger('scroll.headerScroll');
+
+  //
+  // Dylan and Nika scroll
+  //
+
+  var $textFade = $('.text-fade-in');
+
+  if ( $textFade.length ) {
+    var textFadeActivatePoint;
+    var setTextFadeActivatePoint = function() {
+      textFadeActivatePoint = $textFade.offset().top - ( App.windowHeight / 4 );
+    };
+
+    $('body').imagesLoaded(function() {
+      setTextFadeActivatePoint();
+    });
+
+    $(window).resize(function() {
+      setTextFadeActivatePoint();
+    });
+
+    $(window).on('scroll.dylanNikaScroll', function() {
+      if ( App.scrollTop >= ( textFadeActivatePoint ) ) {
+        $textFade.addClass('active');
+        $(window).off('scroll.dylanNikaScroll');
+      }
+    });
+
+    $(window).trigger('scroll.dylanNikaScroll');
+  }
 });
