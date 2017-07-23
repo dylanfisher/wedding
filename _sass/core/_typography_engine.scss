@@ -87,3 +87,7 @@ $font-stack-freya: 'freya-medium', serif;
   }
 }
 .font-subtitle { @include font-subtitle; }
+
+
+::-moz-selection { background: #FECCE3; }
+::selection { background: #FECCE3; }
