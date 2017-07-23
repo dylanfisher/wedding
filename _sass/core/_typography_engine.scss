@@ -21,7 +21,7 @@ $font-stack-title: 'freya-medium', serif;
   letter-spacing: 0;
 
   @include breakpoint(sm) {
-    font-size: 41px;
+    font-size: 36px;
   }
 }
 .font-regular { @include font-regular; }
@@ -45,7 +45,7 @@ $font-stack-title: 'freya-medium', serif;
   letter-spacing: -2.8px;
 
   @include breakpoint(sm) {
-    font-size: 100px;
+    font-size: 72px;
   }
 }
 .font-title { @include font-title; }
@@ -58,7 +58,7 @@ $font-stack-title: 'freya-medium', serif;
   text-transform: uppercase;
 
   @include breakpoint(sm) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .font-subtitle { @include font-subtitle; }
