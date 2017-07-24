@@ -25,7 +25,7 @@
 
 .nav {
   font-family: $font-stack-regular;
-  font-size: 18px;
+  font-size: 23px;
   line-height: 1.4;
   letter-spacing: 0;
   position: fixed;
@@ -68,7 +68,6 @@
   @include breakpoint(sm) {
     top: $gutter;
     right: $gutter * 2;
-    font-size: 23px;
     line-height: 1.7;
   }
 }
