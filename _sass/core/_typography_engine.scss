@@ -51,6 +51,20 @@ $font-stack-freya: 'freya-medium', serif;
 }
 .font-intro-text { @include font-intro-text; }
 
+@mixin font-intro-text-hp {
+  font-family: $font-stack-freya;
+  font-size: 33px;
+  line-height: 1.4;
+  letter-spacing: -1px;
+  text-align: center;
+
+  @include breakpoint(sm) {
+    font-size: 32px;
+  }
+}
+.font-intro-text-hp { @include font-intro-text-hp; }
+
+
 @mixin font-title {
   font-family: $font-stack-freya;
   font-size: 60px;
@@ -61,6 +75,7 @@ $font-stack-freya: 'freya-medium', serif;
     font-size: 72px;
   }
 }
+
 .font-title { @include font-title; }
 
 @mixin font-jumbo {
