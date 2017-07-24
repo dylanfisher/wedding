@@ -8,11 +8,15 @@
 }
 
 .home-content {
-  margin: 0 $gutter;
+  @include breakpoint(sm) {
+    margin: 0 $gutter;
+  }
 }
 
 .layout--home .footer {
-  margin: 0 $gutter $gutter;
+  @include breakpoint(sm) {
+    margin: 0 $gutter $gutter;
+  }
 }
 
 .home-save-the-date-anchor {
@@ -45,12 +49,20 @@
 
 .splash-date-item {
   font-family: $font-stack-freya;
-  font-size: 226px;
+  font-size: 90px;
   line-height: 1;
   letter-spacing: -3.3px;
   position: absolute;
   z-index: 1;
   color: #fff;
+
+  @include breakpoint(sm) {
+    font-size: 180px;
+  }
+
+  @include breakpoint(md) {
+    font-size: 226px;
+  }
 }
 
 .splash-date__1 {
@@ -83,6 +95,7 @@
   label {
     @include font-subtitle;
     display: inline-block;
+    width: 100%;
   }
 
   input,
@@ -146,8 +159,12 @@
   .submit-button {
     @include font-subtitle;
     padding: 1rem;
-    width: 350px;
+    max-width: 100%;
     position: relative;
     z-index: 1;
+
+    @include breakpoint(sm) {
+      width: 350px;
+    }
   }
 }

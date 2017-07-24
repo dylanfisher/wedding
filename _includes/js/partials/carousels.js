@@ -11,6 +11,7 @@ $(function() {
       wrapAround: true,
       selectedAttraction: 0.017,
       pageDots: false,
+      adaptiveHeight: true,
       arrowShape: {
         x0: 10,
         x1: 60, y1: 50,

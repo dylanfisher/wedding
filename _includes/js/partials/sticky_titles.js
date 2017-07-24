@@ -8,6 +8,11 @@ $(function() {
     }
   };
 
+  if ( App.breakpoint.isMobile() ) {
+    options.padding.top = 0;
+  }
+
+
   $('body').imagesLoaded( function() {
     $('.sticky-title').pin( options );
   });

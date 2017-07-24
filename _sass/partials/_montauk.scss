@@ -3,9 +3,10 @@
 .fish-animation {
   width: 396px;
   height: 328px;
-  margin: 0 auto;
   position: relative;
   overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .fish-animation__background {
@@ -32,30 +33,40 @@
 }
 
 .getting-here-icon-wrapper {
-  height: 100px;
   position: relative;
 
-  svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  @include breakpoint(sm) {
+    height: 100px;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
 .getting-here-caption {
   max-width: 250px;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
+
+  @include breakpoint(sm) {
+    margin: 0 auto;
+  }
 }
 
 .weather-block {
-  @include gutter-offset;
   position: relative;
   overflow: hidden;
   padding-top: $block-spacing;
   padding-bottom: $block-spacing;
   margin-top: -$block-spacing;
   margin-bottom: $block-spacing;
+
+  @include breakpoint(sm) {
+    @include gutter-offset;
+  }
 }
 
 .weather-block__video {
@@ -69,6 +80,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.weather-block__video-fallback {
+  background-image: url(../assets/images/montauk/montauk-weather-fallback.jpg);
 }
 
 @keyframes fishLoop {

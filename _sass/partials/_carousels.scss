@@ -12,12 +12,14 @@
 
 .carousel__caption-column {
   text-align: center;
+  margin-bottom: 1rem;
 
   @include breakpoint(sm) {
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    margin-bottom: 0;
   }
 }
 
@@ -26,8 +28,9 @@
   text-align: left;
 }
 
-.flickity-prev-next-button {
+.carousel .flickity-prev-next-button {
   background: transparent !important;
+  width: 30px;
 
   svg {
     transition: transform 0.2s ease-in-out;
@@ -48,12 +51,24 @@
       transform: scale(1);
     }
   }
+
+  @include breakpoint(sm) {
+    width: 44px;
+  }
 }
 
 .flickity-prev-next-button.previous {
-  left: 20px !important;
+  left: 0 !important;
+
+  @include breakpoint(sm) {
+    left: 20px !important;
+  }
 }
 
 .flickity-prev-next-button.next {
-  right: 20px !important;
+  right: 0 !important;
+
+  @include breakpoint(sm) {
+    right: 20px !important;
+  }
 }

@@ -25,12 +25,12 @@
 
 .nav {
   font-family: $font-stack-regular;
-  font-size: 23px;
-  line-height: 1.7;
+  font-size: 18px;
+  line-height: 1.4;
   letter-spacing: 0;
   position: fixed;
-  top: $gutter;
-  right: $gutter * 2;
+  top: 0;
+  right: 10px;
   text-align: right;
   z-index: 100;
 
@@ -45,11 +45,16 @@
         position: absolute;
         top: 50%;
         margin-top: -2px;
-        right: -14px;
+        left: -14px;
         width: 6px;
         height: 6px;
         background-color: #04203E;
         border-radius: 50%;
+
+        @include breakpoint(sm) {
+          right: -14px;
+          left: auto;
+        }
       }
     }
   }
@@ -58,6 +63,13 @@
     a {
       color: #fff;
     }
+  }
+
+  @include breakpoint(sm) {
+    top: $gutter;
+    right: $gutter * 2;
+    font-size: 23px;
+    line-height: 1.7;
   }
 }
 
