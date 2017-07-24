@@ -7,3 +7,11 @@
 .va-bottom { vertical-align: bottom; }
 
 .overflow-hidden { overflow: hidden; }
+
+.xs-inline-only {
+  display: none;
+
+  @include breakpoint(xs) {
+    display: inline;
+  }
+}
