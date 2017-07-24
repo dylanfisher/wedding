@@ -25,7 +25,11 @@
 
 .full-bleed,
 .full-bleed-push {
-  height: 100vh;
+  height: 90vh;
+
+  @include breakpoint(sm) {
+    height: 100vh;
+  }
 }
 
 .full-bleed {

@@ -95,6 +95,10 @@
 .engaged-text {
   position: relative;
   overflow: hidden;
+
+  @include breakpoint(sm) {
+    padding: 10px;
+  }
 }
 
 .engaged-text__background-wrapper {
@@ -108,17 +112,24 @@
 }
 
 .engaged-text__background {
-  animation: engageRotate 30s infinite linear;
-  background-image: url(../assets/images/nika_dylan/2017/engaged/engaged-background.jpg);
-  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+
+  @include breakpoint(xs) {
+    background-image: url(../assets/images/nika_dylan/2017/engaged/engaged-background.jpg);
+    background-size: cover;
+  }
 }
 
-@keyframes engageRotate {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+.engaged-text__background__video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
