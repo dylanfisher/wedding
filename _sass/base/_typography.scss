@@ -12,6 +12,11 @@ h1, h2,
   margin: 2rem 0 1rem;
 }
 
+h1.font-jumbo.home-text {
+  margin: 1.2rem 0 1rem;
+  line-height: 1.1;
+}
+
 h3, h4, h5, h6,
 .subtitle {
   @include font-subtitle;
@@ -28,7 +33,7 @@ ul, p {
 
 .small-title {
   font-family: $font-stack-freya;
-  font-size: 56px;
+  font-size: 32px;
   line-height: 1;
   letter-spacing: -0.91px;
 }
