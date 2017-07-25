@@ -5,6 +5,10 @@
   background-color: $body-color;
   position: relative;
   z-index: 2;
+
+  .block {
+    padding-bottom: 3rem;
+  }
 }
 
 .home-content {

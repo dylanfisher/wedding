@@ -95,10 +95,6 @@
 .engaged-text {
   position: relative;
   overflow: hidden;
-
-  @include breakpoint(sm) {
-    padding: 10px;
-  }
 }
 
 .engaged-text__background-wrapper {

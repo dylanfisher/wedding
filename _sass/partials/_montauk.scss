@@ -23,13 +23,13 @@
 
 .fish-animation svg,
 .fish-animation__svg-wrapper {
-  width: 515px;
-  height: 515px;
+  width: 535px;
+  height: 535px;
 }
 
 .fish-animation__svg-wrapper {
   animation: fishLoop 6s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
-  margin: -93px 0 0 -54px;
+  margin: -103px 0 0 -64px;
 }
 
 .getting-here-icon-wrapper {
