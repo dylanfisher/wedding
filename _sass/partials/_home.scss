@@ -11,6 +11,10 @@
   }
 }
 
+.home-text__grouping {
+  margin-top: 30px;
+}
+
 .home-content {
   @include breakpoint(sm) {
     margin: 0 $gutter;
@@ -42,6 +46,7 @@
   left: 0;
   width: 100%;
   overflow: hidden;
+  background-color: #FD998B;
 }
 
 .full-bleed__video {
@@ -53,6 +58,8 @@
   width: 102%;
   height: 102%;
   pointer-events: none;
+  filter: saturate(150%);
+  opacity: .4;
 }
 
 .splash-date-item {
@@ -94,7 +101,7 @@
 }
 
 .mc-signup {
-  text-align: left;
+  text-align: center;
 
   .mc-form {
     display: none;
@@ -137,7 +144,6 @@
   }
 
   .submit-button-wrapper {
-    margin-top: 2rem;
     position: relative;
     overflow: hidden;
     display: inline-block;
@@ -166,10 +172,21 @@
 
   .submit-button {
     @include font-subtitle;
+    font-size: 24px !important;
+    letter-spacing: 6px !important;
     padding: 1rem;
     max-width: 100%;
     position: relative;
     z-index: 1;
+    border: 1px solid $text-color;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    line-height: 1;
+
+    &:hover {
+      border: 1px solid $text-color;
+    }
 
     @include breakpoint(sm) {
       width: 350px;
@@ -179,4 +196,8 @@
 
 .home-video-fallback {
   background-image: url(../assets/images/mobile-fallbacks/hp-fallback.jpg)
+}
+
+.lead-info {
+  text-transform: none;
 }

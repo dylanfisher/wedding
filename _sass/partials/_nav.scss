@@ -29,7 +29,7 @@
   line-height: 1.4;
   letter-spacing: 0;
   position: fixed;
-  top: 0;
+  top: 15px;
   right: 10px;
   text-align: right;
   z-index: 100;
@@ -68,7 +68,6 @@
   @include breakpoint(sm) {
     top: $gutter;
     right: $gutter * 2;
-    line-height: 1.7;
   }
 }
 
