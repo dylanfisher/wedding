@@ -26,7 +26,9 @@ markdown: kramdown
 
 # Site nav
 navigation:
-  - Save the Date: /#save-the-date
+  - Our Wedding: /#save-the-date
+  - RSVP: https://goo.gl/forms/xRHYNbHzxelLh0bo2
+  - Registry: https://www.myregistry.com/wedding-registry/Nika-Simovich-and-Dylan-Fisher-Astoria-NY/1533369
   - Montauk: /montauk/
   - Order of Events: /order-of-events/
   - Dylan & Nika: /dylan-nika/

@@ -15,6 +15,10 @@ h1, h2,
 h1.font-jumbo.home-text {
   margin: 1.2rem 0 1rem;
   line-height: 1.1;
+
+  @include breakpoint(sm) {
+    font-size: 74px;
+  }
 }
 
 h3, h4, h5, h6,
